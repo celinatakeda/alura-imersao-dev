@@ -1,0 +1,64 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    min-height: 400px;
+    background-image: url("https://image.flaticon.com/icons/png/512/201/201635.png");
+    background-color: #000000;
+    background-size: 80vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+  }
+  
+  .page-logo {
+    width: 200px;
+  }
+
+  .logo {
+      width: 500px;
+      height: 500px;
+      margin-top: 15px;
+      align-items: center;      
+      
+  }
+  
+  .circulo-azul {
+      border-radius: 50%;
+      width: 390px;
+      height:390px; 
+      position: absolute;        
+  }
+
+  .papel {
+      border-radius: 10px;
+      height: 250px;
+      width: 180px;
+      position: absolute;
+      margin-left: 120px;
+      margin-top: 50px;      
+  }
+
+  .letra {
+      position: absolute;      
+      color: gold;      
+      width: 850px;
+      height: 100px;
+      margin-top: 60px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+      font-size: 50px;  
+
+  }
