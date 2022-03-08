@@ -15,7 +15,7 @@ body {
   }
   
   .page-title {
-    color: #ffffff;
+    color: blue;
     margin: 0 0 5px;
   }
   
@@ -60,4 +60,29 @@ body {
       margin-top: 30px;
       font-family:cursive ;
       font-size: 20px;  
+  }
+
+  h2 {
+    color:#ffffff;
+  }
+
+  .container-main {
+    width: 300px;
+    height: 250px;
+    margin: auto;
+  }
+  
+  .container-main input {
+    height: 35px;
+    font-size: 15px;
+    background: #ffffff;
+  }
+  
+  .container-main button {
+    margin-top: 12px;
+    height: 50px;
+    border-radius: 8px;
+    background: chocolate;
+    color: #000000;
+    font-size: 20px;
   }

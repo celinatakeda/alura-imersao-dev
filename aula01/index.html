@@ -3,6 +3,7 @@
 <head>
   <title>Imersão Dev Alura - Aula 01</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -16,28 +17,24 @@
             <img src="./img/OIP.jpeg" alt="" class="circulo-azul">    
         </div>
         <div >
-        <img src="./img/papel.jpeg" alt="" class="papel">
-        
+        <img src="./img/papel.jpeg" alt="" class="papel">        
         </div>
         <div>
             <h1 class="letra">A+</h1>
-        </div>     
+        </div>
+      </div>        
+    
+      <div class="container-main">
+          <input type="number" placeholder="Nota1" id="nota1">
+          <input type="number" placeholder="Nota2" id="nota2"> 
+          <input type="number" placeholder="Nota3" id="nota3">
+          <input type="number" placeholder="nota4" id="nota4">
+        
+          <button type="submit" onclick="CalcularMedia()">Calcular Média</button>
+        
+        <h2 id="resultadoMedia"></h2>     
     </div>
-    <main class="container-main">
-      <div>
-        <input type="text" placeholder="Nota1">
-        <input type="text" placeholder="Nota2">
-        <input type="text" placeholder="Nota3">
-        <input type="text" placeholder="nota4">
-      </div>
-      <div>
-        <button type="submit">Calcular Média</button>
-      </div>
-      <div>
-        <input type="text" id="display">
-
-      </div>
-    </main>> 
-    <script src="script.js"></script>
+  </div>>
+    
   </body>  
 </html
