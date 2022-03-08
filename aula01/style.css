@@ -30,7 +30,7 @@ body {
 
   .logo {
       width: 250px;
-      height: 250px;
+      height: 130px;
       margin-top: 15px;     
       margin: auto;  
       display: flex;    
@@ -38,26 +38,27 @@ body {
   
   .circulo-azul {
       border-radius: 50%;
-      width: 160px;
-      height:160px; 
-      position: absolute;            
+      width: 120px;
+      height:120px; 
+      position: absolute;
+      margin-left: 50px;            
   }
 
   .papel {
       border-radius: 8px;
-      height: 100px;
-      width: 80px;
+      height: 80px;
+      width: 60px;
       position: absolute;
-      margin-left: 40px;
-      margin-top: 30px;      
+      margin-left: 80px;
+      margin-top: 20px;      
   }
 
   .letra {
       position: absolute;      
       color: gold;      
-      width: 130px;
-      height: 100px;
-      margin-top: 30px;
+      width: 200px;
+      height: 90px;
+      margin-top: 20px;
       font-family:cursive ;
       font-size: 20px;  
   }
@@ -67,22 +68,22 @@ body {
   }
 
   .container-main {
-    width: 300px;
-    height: 250px;
+    width: 280px;
+    height: 150px;
     margin: auto;
   }
   
   .container-main input {
-    height: 35px;
+    height: 30px;
     font-size: 15px;
     background: #ffffff;
   }
   
   .container-main button {
     margin-top: 12px;
-    height: 50px;
+    height: 30px;
     border-radius: 8px;
     background: chocolate;
     color: #000000;
-    font-size: 20px;
+    font-size: 18px;
   }

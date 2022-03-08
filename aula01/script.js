@@ -21,7 +21,7 @@ function CalcularMedia() {
   
       var elementoResultadoMedia = document.getElementById("resultadoMedia");
   
-      var mediaFinal = "Sua média foi: " + media;
+      var mediaFinal = "Sua média foi: " + media.toFixed(2);
   
       elementoResultadoMedia.innerHTML = mediaFinal;
     } else {
