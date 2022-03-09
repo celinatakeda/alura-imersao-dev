@@ -26,7 +26,7 @@ function CalcularMedia() {
       elementoResultadoMedia.innerHTML = mediaFinal;
     } else {
       var elementoResultadoMedia = document.getElementById("resultadoMedia");
-      elementoResultadoMedia.innerHTML = "Digite as notas";
+      elementoResultadoMedia.innerHTML = "Digite todas as notas";
     }
   }
   
