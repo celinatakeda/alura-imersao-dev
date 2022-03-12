@@ -60,19 +60,12 @@ body {
   
   h2 {
     color: #ffffff;
-    font-size: 30px;
-  }
-
-  .form-check {
-   
-    
-    
+    font-size: 20px;
   }
 
   .form-check-input {
-    width: 18px;
-    height: 18px;
-    
+    width: 16px;
+    height: 16px; 
     
   }
 

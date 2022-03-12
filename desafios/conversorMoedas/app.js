@@ -1,15 +1,35 @@
 function Converter() {
     var elementoValor = document.getElementById("valor").value;
-    console.log(elementoValor);
     var elementoOpcao1 = document.querySelector("input[name=dolarReal]:checked");
-    console.log(elementoOpcao1);
-  
-    if (elementoOpcao1 != null) {
-      var dolarEmReal = elementoValor * 5;
-      console.log(dolarEmReal);
-  
-      var elementoValorConvertido = document.getElementById("valorConvertido");
-      elementoValorConvertido.innerHTML = dolarEmReal;
+    var elementoOpcao2 = document.querySelector("input[name=realDolar]:checked");
+    var elementoOpcao3 = document.querySelector("input[name=realBitcoin]:checked");
+      
+    ConverterRealDolar(elementoValor, elementoOpcao1);
+    ConverterDolarReal(elementoValor, elementoOpcao2);
+    ConverterRealBitcoin(elementoValor, elementoOpcao3);   
+  }
+
+    function ConverterRealDolar(valor, opcao) {
+    if(opcao != null) {
+      var realEmDolar = valor * 5;
+      var elementoValorConvertido = document.getElementById("valorConvertidoReal");
+      elementoValorConvertido.innerHTML = "R$ " + realEmDolar;
+    }
+  }
+
+  function ConverterDolarReal(valor, opcao) {
+    if(opcao != null) {
+      var DolarEmReal = valor / 5;
+      var elementoValorConvertido = document.getElementById("valorConvertidoDolar");
+      elementoValorConvertido.innerHTML = "U$ " + DolarEmReal;
+    }
+  }
+
+  function ConverterRealBitcoin(valor, opcao) {
+    if(opcao != null) {
+      var realEmBitcoin = valor * 198;
+      var elementoValorConvertido = document.getElementById("valorConvertidoBitcoin");
+      elementoValorConvertido.innerHTML = "BTC " + realEmBitcoin;
     }
   }
 
