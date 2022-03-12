@@ -27,7 +27,7 @@ function Converter() {
 
   function ConverterRealBitcoin(valor, opcao) {
     if(opcao != null) {
-      var realEmBitcoin = valor * 198;
+      var realEmBitcoin = valor * 2;
       var elementoValorConvertido = document.getElementById("valorConvertidoBitcoin");
       elementoValorConvertido.innerHTML = "BTC " + realEmBitcoin;
     }
