@@ -13,3 +13,5 @@ No app.js implementei as funcões:
 
 .exibeJogadoresNaTela() - joga na tela os jogadores que são adicionados na lista;
 
+
+
