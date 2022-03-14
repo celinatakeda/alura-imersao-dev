@@ -70,6 +70,11 @@ body {
   }
 
   .form-check-label {
-    font-size: 16px;
-   
+    font-size: 16px;    
   }
+
+  .form-check-input-bitcoin {
+    margin-left: 34px;
+  }
+
+  
