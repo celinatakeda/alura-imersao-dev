@@ -1,3 +1,6 @@
+
+##Sobre o projeto
+
 Neste projeto, o usuário tem que inserir o nome do jogador, número de vitórias, empates, derrotas e os pontos são calculados numa função no JavaScript. 
 
 No app.js implementei as funcões:
