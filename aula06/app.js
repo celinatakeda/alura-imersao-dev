@@ -14,8 +14,7 @@ function inserirJogador() {
   document.getElementById("nome").value = "";
   document.getElementById("vitorias").value = "";
   document.getElementById("empates").value = "";
-  document.getElementById("derrotas").value = "";
- 
+  document.getElementById("derrotas").value = ""; 
 }
 
 function adicionarJogador(jogador) {

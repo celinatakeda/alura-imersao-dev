@@ -9,6 +9,15 @@
 
 <body>
   <h1>Tabela de classificação</h1>
+  <label for="jogador">Insira o jogador</label><br>
+  <input type="text" id="nome" placeholder="Nome"><br>
+  <input type="text" id="vitorias" placeholder="Vitórias"><br>
+  <input type="text" id="empates" placeholder="Empates"><br>
+  <input type="text" id="derrotas" placeholder="Derrotas"><br>
+  
+  <button type="submit" onclick="inserirJogador()" id="adicionar">Adicionar</button>
+  <br><br>
+
   <table style="width:100%">
     <thead>
       <tr>
@@ -44,16 +53,8 @@
     !-->
     </tbody>
   </table>
-  <br><br>
-
-  <label for="jogador">Insira jogador</label><br>
-  <input type="text" id="nome" placeholder="Nome"><br>
-  <input type="text" id="vitorias" placeholder="Vitórias"><br>
-  <input type="text" id="empates" placeholder="Empates"><br>
-  <input type="text" id="derrotas" placeholder="Derrotas"><br><br>
   
-  <button type="submit" onclick="inserirJogador()">Adicionar</button>
-  <h2 id="msg-valida"></h2>
+  
   <script src="app.js"></script>
 </body>
 </html>
