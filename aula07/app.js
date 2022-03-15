@@ -43,12 +43,44 @@ function sortearCarta() {
 
     document.getElementById("btnSortear").disabled = true;
     document.getElementById("btnJogar").disabled = false;
+
+    exibirOpcoes();
 }
 
 function exibirOpcoes() {
     var opcoes = document.getElementById("opcoes");
+    var opcoesTexto = "";
 
-    for (var atributo in numeroCartaJogador.atributos) {
+    for (var atributo in cartaJogador.atributos) {
+        opcoesTexto += "<input type='radio' name='atributo' value='" + atributo + "'>" + atributo;
         console.log(atributo)
     }
+    opcoes.innerHTML = opcoesTexto;
+}
+
+function obtemAtributoSelecionado() {
+    var radioAtributos = document.getElementsByName("atributo");
+
+    for (var i = 0; i < radioAtributos.length; i++) {
+        if (radioAtributos[i].checked == true) {
+            return radioAtributos[i].value 
+        }
+    }
+}
+
+function jogar() {
+    var atributoSelecionado = obtemAtributoSelecionado();
+    var elementoResultado = document.getElementById("resultado");
+    var valorCartaJogador = cartaJogador.atributos[atributoSelecionado];
+    var valorCartaMaquina = cartaMaquina.atributos[atributoSelecionado];
+    
+    if (valorCartaJogador > valorCartaMaquina) {
+        elementoResultado.innerHTML = "Você venceu!"
+    }else if (valorCartaMaquina > valorCartaJogador) {
+        elementoResultado.innerHTML = "Você perdeu, a carta da máquina é maior"
+    }else {
+        elementoResultado.innerHTML = "Empatou!"
+    }
+    console.log(cartaMaquina);
+    
 }
