@@ -1,11 +1,12 @@
 var carta1 = {
-    nome: "Bulbasauro",
+    nome: "Bulbasaur",
     atributos: {
         ataque: 7,
         defesa: 8,
         magia: 6
-    } 
+    }        
 };
+
 
 var carta2 = {
     nome: "Darth Vader",
@@ -13,7 +14,8 @@ var carta2 = {
         ataque: 9,
         defesa: 8,
         magia: 2
-    } 
+    }
+      
 };
 
 var carta3 = {
@@ -22,21 +24,31 @@ var carta3 = {
         ataque: 5,
         defesa: 9,
         magia: 10
-    } 
+    }     
 };
 
-var cartas = [carta1, carta2, carta3];
+var carta4 = {
+    nome: "Shiny",
+    atributos: {
+        ataque: 9,
+        defesa: 7,
+        magia: 5
+    }
+};
+    
+
+var cartas = [carta1, carta2, carta3, carta4];
 var cartaMaquina;
 var cartaJogador;
 
 function sortearCarta() {
-    var numeroCartaMaquina = parseInt(Math.random() * 3);
+    var numeroCartaMaquina = parseInt(Math.random() * 4);
     cartaMaquina = cartas[numeroCartaMaquina];
     console.log(cartaMaquina);
 
-    var numeroCartaJogador = parseInt(Math.random() * 3);
+    var numeroCartaJogador = parseInt(Math.random() * 4);
     while (numeroCartaMaquina == numeroCartaJogador) {
-        numeroCartaJogador = parseInt(Math.random() * 3);
+        numeroCartaJogador = parseInt(Math.random() * 4);
     }
     cartaJogador = cartas[numeroCartaJogador];
     console.log(cartaJogador);
@@ -48,7 +60,8 @@ function sortearCarta() {
 }
 
 function exibirOpcoes() {
-    var opcoes = document.getElementById("opcoes");
+    var exibirCarta = document.getElementById("cartaJogador");
+    var opcoes = document.getElementById("opcoes");    
     var opcoesTexto = "";
 
     for (var atributo in cartaJogador.atributos) {
@@ -56,24 +69,31 @@ function exibirOpcoes() {
         console.log(atributo)
     }
     opcoes.innerHTML = opcoesTexto;
+    exibirCarta.innerHTML = "Sua carta: " + cartaJogador.nome + "<br>" + "ataque: " + cartaJogador.atributos.ataque + " " + "defesa: " + cartaJogador.atributos.defesa + " " + "magia: " + cartaJogador.atributos.magia;
+
 }
 
 function obtemAtributoSelecionado() {
     var radioAtributos = document.getElementsByName("atributo");
-
+    
     for (var i = 0; i < radioAtributos.length; i++) {
-        if (radioAtributos[i].checked == true) {
-            return radioAtributos[i].value 
-        }
-    }
+        if (radioAtributos[i].checked == true) {            
+            return radioAtributos[i].value             
+        }        
+    }   
 }
 
 function jogar() {
-    var atributoSelecionado = obtemAtributoSelecionado();
+    var atributoSelecionado = obtemAtributoSelecionado();    
     var elementoResultado = document.getElementById("resultado");
     var valorCartaJogador = cartaJogador.atributos[atributoSelecionado];
-    var valorCartaMaquina = cartaMaquina.atributos[atributoSelecionado];
-    
+    var valorCartaMaquina = cartaMaquina.atributos[atributoSelecionado]; 
+
+    if (atributoSelecionado == undefined) {
+        elementoResultado.innerHTML = "Você não selecionou atributo!"
+        return
+    }
+
     if (valorCartaJogador > valorCartaMaquina) {
         elementoResultado.innerHTML = "Você venceu!"
     }else if (valorCartaMaquina > valorCartaJogador) {
@@ -81,6 +101,6 @@ function jogar() {
     }else {
         elementoResultado.innerHTML = "Empatou!"
     }
-    console.log(cartaMaquina);
+    
     
 }
