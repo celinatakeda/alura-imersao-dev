@@ -115,6 +115,8 @@ var cartaPaulo = {
     document.getElementById("btnSortear").disabled = true;
     document.getElementById("btnJogar").disabled = false;
     exibirCartaJogador();
+    
+    
   }
   
   function obtemAtributoSelecionado() {

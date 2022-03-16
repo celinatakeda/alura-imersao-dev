@@ -20,7 +20,7 @@ body {
     margin: 5px 0;
 }
 
-button, .button-jogar {
+button, .button-jogar, .button-reinicia {
     padding: .8rem 1.5rem;
     margin: 1rem 0;
     border-radius: 5px;
@@ -124,7 +124,7 @@ form {
     color: #ffffff;    
 }
 
-.button-jogar {
+.button-jogar, .button-reinicia {
     background-color: #ffffff;
     width: 200px;
     margin: auto;
