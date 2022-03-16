@@ -31,42 +31,42 @@ var cartaPaulo = {
     }
   };
 
-  var cartaPaulo = {
-    nome: "Shiryu de dragão",
+  var cartaPiplup = {
+    nome: "Piplup Tail",
     imagem:
-        "https://pm1.narvii.com/6399/964f7fc5d3b518bb492d98563359f6fc1fbecf1b_hq.jpg",
+        "https://www.pngfind.com/pngs/m/441-4413614_personagem-pokemon-png-piplup-tail-transparent-png.png",
       //"http://pm1.narvii.com/6399/96fdb9d4fe6a9e72b9bc60ad418e3c43795e53b4_00.jpg",
     atributos: {
       ataque: 5,
-      defesa: 9,
-      magia: 10
+      defesa: 6,
+      magia: 8
     }
   };
 
-  var cartaPaulo = {
-    nome: "Shiryu de dragão",
+  var cartaMeotwo = {
+    nome: "Meotwo",
     imagem:
-        "https://pm1.narvii.com/6399/964f7fc5d3b518bb492d98563359f6fc1fbecf1b_hq.jpg",
+        "https://i.pinimg.com/originals/17/fa/d8/17fad813cda380f2d310d24b18cbfd34.png",
       //"http://pm1.narvii.com/6399/96fdb9d4fe6a9e72b9bc60ad418e3c43795e53b4_00.jpg",
     atributos: {
-      ataque: 5,
-      defesa: 9,
-      magia: 10
+      ataque: 8,
+      defesa: 7,
+      magia: 9
     }
   };
   
   var cartaMaquina;
   var cartaJogador;
-  var cartas = [cartaPaulo, cartaRafa, cartaGui];
+  var cartas = [cartaPaulo, cartaRafa, cartaGui, cartaPiplup, cartaMeotwo];
   // 0          1           2
   
   function sortearCarta() {
-    var numeroCartaMaquina = parseInt(Math.random() * 3);
+    var numeroCartaMaquina = parseInt(Math.random() * 5);
     cartaMaquina = cartas[numeroCartaMaquina];
   
-    var numeroCartaJogador = parseInt(Math.random() * 3);
+    var numeroCartaJogador = parseInt(Math.random() * 5);
     while (numeroCartaJogador == numeroCartaMaquina) {
-      numeroCartaJogador = parseInt(Math.random() * 3);
+      numeroCartaJogador = parseInt(Math.random() * 5);
     }
     cartaJogador = cartas[numeroCartaJogador];
     console.log(cartaJogador);
@@ -86,22 +86,25 @@ var cartaPaulo = {
   }
   
   function jogar() {
-    console.log("chamou");
+    //console.log("chamou");
     var atributoSelecionado = obtemAtributoSelecionado();
     var divResultado = document.getElementById("resultado");
+
+    if (atributoSelecionado == undefined) {
+        divResultado.innerHTML = "Você não selecionou o atributo!"
+        return
+    }
   
-    if (
-      cartaJogador.atributos[atributoSelecionado] >
-      cartaMaquina.atributos[atributoSelecionado]
+    if (cartaJogador.atributos[atributoSelecionado] > cartaMaquina.atributos[atributoSelecionado]
     ) {
-      htmlResultado = "<p class='resultado-final'>Venceu</p>";
+      htmlResultado = "<p class='resultado-final'>Venceu!</p>";
     } else if (
       cartaJogador.atributos[atributoSelecionado] <
       cartaMaquina.atributos[atributoSelecionado]
     ) {
-      htmlResultado = "<p class='resultado-final'>Perdeu</p>";
+      htmlResultado = "<p class='resultado-final'>Perdeu!</p>";
     } else {
-      htmlResultado = "<p class='resultado-final'>Empatou</p>";
+      htmlResultado = "<p class='resultado-final'>Empatou!</p>";
     }
     divResultado.innerHTML = htmlResultado;
   
