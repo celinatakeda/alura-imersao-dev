@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto Mono', monospace;
     min-height: 854px;
-    background-image: url('https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-07-super-trunfo-bg.png');
+    background-image: url('https://wallpapercave.com/wp/PS7HtBx.jpg');
     background-color: #000000;
     background-size: cover;
     background-position: center top;
@@ -92,6 +92,7 @@ h2 {
 form {
     display: flex;
     flex-direction: column;
+    
 }
 
 .wrapper {
@@ -129,7 +130,6 @@ form {
     margin: auto;
 }
 
-
 #carta-jogador {
     margin-left: 300px;
 }
@@ -140,7 +140,6 @@ form {
 
 #resultado {
     color: #fff;
-    font-size: 26px;
+    font-size: 26px; 
     
-    margin-top: 10px;
   }
