@@ -53,8 +53,7 @@ body {
     box-shadow: 6px 6px 6px #0E1D2F;
     padding: 64px;
     width: 1126px;
-    height: 550px;
-       
+    height: 550px;       
 }
 
 ul {
@@ -77,13 +76,13 @@ li {
     margin-left: 50px;
 }
 
-.container-sociais {
+.container-sociais {    
    width: 200px;
    height: 150px;
 }
 
 h2 {
-   
+    background: #5a5b5c;   
     display: flex;
     justify-content: center;
 }
@@ -98,3 +97,6 @@ h2 {
     max-width: 45px;
     margin-left: 10px;   
 }
+
+
+
