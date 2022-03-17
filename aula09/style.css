@@ -89,7 +89,7 @@ h2 {
 
 .github {
     max-width: 50px;  
-    margin-left: 500px;
+    margin-left: 10px;
     border-radius: 50%;   
 }
 
@@ -98,5 +98,8 @@ h2 {
     margin-left: 10px;   
 }
 
-
+.codepen {
+    max-width: 45px;
+    margin-left: 500px;   
+}
 
