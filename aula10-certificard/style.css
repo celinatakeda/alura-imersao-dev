@@ -67,19 +67,19 @@ body {
     font-weight: 700;
     font-size: 36px;
     padding: 18px;
-      
+    margin-top: 2px;  
 }
 
 .projetos-item {
     list-style-type: none;
     font-size: 24px;
     font-weight: 400;
-    line-height: 48px;    
+    line-height: 48px;        
 }
 
 .projetos-item a {
     color: #1C1C1C;
-    text-decoration: none;
+    text-decoration: none;       
 }
 
 .dark {
@@ -112,19 +112,21 @@ h2 {
     justify-content: center;
 }
 
-.github {
+
+.sociais-github {
     max-width: 50px;  
     margin-left: 10px;
     border-radius: 50%;       
 }
 
-.linkedin {
+.sociais-linkedin {
     max-width: 45px;
     margin-left: 10px;   
 }
 
-.codepen {
+.sociais-codepen {
     max-width: 45px;
-    margin-left: 450px;
-
+    margin-left: 750px;
 }
+   
+
