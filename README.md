@@ -4,13 +4,16 @@ Aulas com projetos práticos ministrados pelos instrutores Rafaella Ballerini, G
 
 
 ## Aula 01
-Na primeira aula, você vai aprender o que são variáveis, como realizar operações e o projeto desenvolvido foi CalculadoraMedia
+Você vai aprender o que são variáveis e como realizar operações.
+Projeto desenvolvido: Calculadora de média
 
 ## Aula 02
 Você vai praticar mais JavaScript, criando um conversor de moedas em uma página web.
+Projeto desenvolvido: Conversor de moedas
 
 ## Aula 03
 Você vai criar um jogo de adivinhação e se aprofundar ainda mais em lógica de programação.
+Projeto desenvolvido: Mentalista
 
 ## Aula 04
 Você vai trabalhar com listas e estruturas de repetições. São funcionalidades que toda pessoa que programa usa com muita frequência.
