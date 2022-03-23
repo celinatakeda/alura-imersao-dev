@@ -2,12 +2,6 @@
 
 Aulas com projetos práticos ministrados pelos instrutores Rafaella Ballerini, Gui Lima e Paulo Silveira.
 
-## Tecnologias Utilizadas
-.HTML
-
-.CSS
-
-.JavaScript 
 
 ## Aula 01
 Na primeira aula, você vai aprender o que são variáveis, como realizar operações e o projeto desenvolvido foi CalculadoraMedia
@@ -42,7 +36,12 @@ Criar o seu próprio portfólio. Você vai conhecer o Figma, uma plataforma de d
 ## Aula 10 
 Evoluir o portfólio e colocá-lo no ar para que todo mundo consiga acessá-lo.
 
+## Tecnologias Utilizadas
+.**HTML**
 
+.**CSS**
+
+.**Javascript** 
 
 
 
