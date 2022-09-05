@@ -23,7 +23,7 @@ function CalcularMedia() {
 
     if (media >= 7) {
       var mediaFinal =
-        "Parabéns, você foi Aprovado! Sua média foi: " + media.toFixed(2);
+        "Parabéns, você foi Aprovado! Sua média foi: " + media.toFixed(1);
       elementoResultadoMedia.innerHTML = mediaFinal;
     } else {
       var mediaFinal =
