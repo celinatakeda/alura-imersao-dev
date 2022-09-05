@@ -25,7 +25,7 @@ function ConverterCelsius() {
     var valorCelsius = (valorFarenheit - 32) / 1.8;
     var elementoValorConvertido = document.getElementById("valorConvertido");
 
-    var valorConvertido = "O resultado é " + valorCelsius + "C";
+    var valorConvertido = "O resultado é " + valorCelsius.toFixed(2) + "C";
     elementoValorConvertido.innerHTML = valorConvertido;
   }else {
     var valorIndefinido = "Digite a temperatura"
