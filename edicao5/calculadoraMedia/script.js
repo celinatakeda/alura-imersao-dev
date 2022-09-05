@@ -22,12 +22,10 @@ function CalcularMedia() {
     var elementoResultadoMedia = document.getElementById("resultadoMedia");
 
     if (media >= 7) {
-      var mediaFinal =
-        "Parabéns, você foi Aprovado! Sua média foi: " + media.toFixed(1);
+      var mediaFinal = "Parabéns, você foi Aprovado! Sua média foi: " + media.toFixed(1);
       elementoResultadoMedia.innerHTML = mediaFinal;
     } else {
-      var mediaFinal =
-        "Infelizmente, você foi Reprovado! Sua média foi: " + media.toFixed(1);
+      var mediaFinal = "Infelizmente, você foi Reprovado! Sua média foi: " + media.toFixed(1)
       elementoResultadoMedia.innerHTML = mediaFinal;
     }
   } else {
