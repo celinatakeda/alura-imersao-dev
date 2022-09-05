@@ -1,0 +1,103 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 400px;
+  background-image: url("https://image.flaticon.com/icons/png/512/201/201635.png");
+
+  background-color: #48875F; 
+  background-size: 80vh;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.page-title {
+  color: #121214;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+.container-main {
+  width: 300px;
+  height: 250px;
+  margin: auto;
+}
+
+.container-main input {
+  width: 150px;
+  height: 30px;
+  font-size: 15px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.container-main button {
+  margin-top: 12px;
+  height: 30px;
+  border-radius: 8px;
+  background: chocolate;
+  color: #000000;
+  font-size: 18px;
+}
+
+.container-main h2 {
+  width: 350px;
+}
+
+.logo {
+  width: 200px;
+  height: 120px;
+  margin-top: 15px;
+  margin: auto;
+  display: flex;
+}
+
+.circulo-azul {
+  border-radius: 80%;
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  margin-left: 50px;
+}
+
+.papel {
+  border-radius: 8px;
+  height: 70px;
+  width: 50px;
+  position: absolute;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+.letra {
+  position: absolute;
+  color: gold;
+  width: 200px;
+  height: 80px;
+  margin-top: 20px;
+  font-family: cursive;
+  font-size: 20px;
+}
