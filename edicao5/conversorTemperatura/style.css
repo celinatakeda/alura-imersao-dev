@@ -27,6 +27,7 @@ body {
 label {
   color: #ffffff;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .container input {
@@ -47,6 +48,7 @@ label {
   height: 60px;
   width: 100px; 
   color: #000000;
+  
 }
 
 .termometro {
