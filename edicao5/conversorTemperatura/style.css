@@ -7,7 +7,7 @@ body {
 .container {
   text-align: center;
   padding: 20px;
-  height: 80vh;
+  height: 82vh;
 }
 
 .page-title {
@@ -44,7 +44,7 @@ label {
   padding: 4px 8px;
   border-radius: 10px;
   background: #fff; 
-  height: 40px;
+  height: 60px;
   width: 100px; 
   color: #000000;
 }
