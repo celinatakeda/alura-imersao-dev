@@ -1,0 +1,66 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 400px; 
+  background-image: url("https://wallpapercave.com/wp/IpGSDFe.jpg");
+  background-color: #121214;
+  background-size: 100%;
+  background-position: cover;
+  background-repeat: no-repeat;
+ 
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+label {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container input {
+  margin: 12px;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.label {
+  color: white;
+}
+
+.container button {
+  margin-top: 5px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  background: #fff; 
+  height: 40px;
+  width: 100px; 
+  color: #000000;  
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 30px;
+  margin-top: 20px;    
+}
+
+a {
+  margin-left: 500px;
+}
