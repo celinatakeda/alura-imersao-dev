@@ -1,11 +1,12 @@
 body {
   font-family: "Roboto Mono", monospace;
   min-height: 600px;
-  background-image: url("https://images.unsplash.com/photo-1504006833117-8886a355efbf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
-  background-color: #000000;
-  background-size: cover;
-  background-position: center bottom;
+  background-image: url("https://media.tenor.com/images/f0fe25ef226676f316911d7dead97f44/tenor.gif");
+  background-color: #121214;
+  background-size: 18vh;
+  background-position: center;
   background-repeat: no-repeat;
+
 }
 
 .container {
@@ -15,13 +16,14 @@ body {
 }
 
 .page-title {
-  color: rgb(170, 238, 11);
+  color: rgb(120, 139, 154);
   margin: 0 0 5px;
 }
 
 .page-subtitle {
-  color: #ffffff;
+  color: #fff;
   margin-top: 16px;
+  font-weight: bold;
 }
 
 .page-logo {
@@ -55,13 +57,15 @@ button {
 }
 
 .resultado {
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   margin-top: 16px;
+  font-size: 20px;
 }
 
 .dica {
   color: #fff;
   text-align: center;
   margin-top: 16px;
+  font-size: 22px;
 }

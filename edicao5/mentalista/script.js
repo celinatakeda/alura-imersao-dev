@@ -37,8 +37,9 @@ function Chutar() {
       }
 
       if (tentativas === 3) {
+        dica.innerHTML = ""
         elementoResultado.innerHTML =
-          "Suas tentativas acabaram. Número secreto era " + numeroSecreto;
+          "Suas tentativas acabaram. Número secreto é " + numeroSecreto;
       }
     }
     return;
