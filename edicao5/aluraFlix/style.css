@@ -16,8 +16,8 @@ body {
 .page-title {
   color: #ffffff;
   margin: 0 0 5px;
-  background: #000000;
-  color: red;
+  background: #121214;
+  color: #da1e26;
 }
 
 .page-subtitle {
@@ -36,21 +36,56 @@ body {
   right: 10px;
 }
 
-body > img {
-  margin: 0 10px;
-}
-
-img {
+#listaFilmes img {
+  margin: 10px;
   max-height: 250px;
 }
 
-p {
-  font-size: 26px;
-  color: red;
+.form-wrapper {
+  margin: 0 0 15px;
 }
 
-input {
-  width: 50%;
-  height: 50px;
-
+.form-wrapper input {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 15px;
 }
+
+.form-wrapper button {
+  border: 0;
+  color: #ffffff;
+  background: #da1e26;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-wrapper button:hover {
+  opacity: 0.8;
+}
+
+#listaFilmes {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  margin-left: 10px;
+}
+
+#nomeFilme {
+  color: #da1e26;
+  margin-top: 1px;
+}
+
+h2 {
+  color: #da1e26;
+}
+
+#fraseFilme {
+  background: #000000;
+}
+
+

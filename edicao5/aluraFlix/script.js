@@ -1,17 +1,67 @@
-var listaFilmes = [
-  "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX140_CR0,0,140,209_AL_.jpg",
-  "https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY209_CR0,0,140,209_AL_.jpg",
-  "https://m.media-amazon.com/images/M/MV5BMzY2ODk4NmUtOTVmNi00ZTdkLTlmOWYtMmE2OWVhNTU2OTVkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY209_CR6,0,140,209_AL_.jpg",
-  "https://m.media-amazon.com/images/M/MV5BYTYxNGMyZTYtMjE3MS00MzNjLWFjNmYtMDk3N2FmM2JiM2M1XkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_UY209_CR0,0,140,209_AL_.jpg",
-  "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UY209_CR0,0,140,209_AL_.jpg",
-  "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY209_CR0,0,140,209_AL_.jpg"
-];
+var listaFilmes = [];
+var elementoFilmeInvalido = document.getElementById("filmeInvalido");
 
-listaFilmes.forEach((filme) => {
-  document.write("<img src=" + filme + ">");
-})
+function adicionarFilme() {
+  var nomeFilmeFavorito = document.getElementById("nomedofilme").value;
+  var filmeFavorito = document.getElementById("filme").value;
+  
+  elementoFilmeInvalido.innerHTML = "" 
+
+  if (filmeFavorito.endsWith(".jpg") || (filmeFavorito.endsWith(".png") || (filmeFavorito.endsWith(".jpeg")))) {
+    listaFilmes.push(filmeFavorito);
+    listaFilmes.push(nomeFilmeFavorito);
+
+    listarFilmesNaTela();
+  } else {
+    elementoFilmeInvalido.innerHTML = "Endereço de filme inválido"
+    console.error("Endereço de filme inválido");     
+  }  
+  document.getElementById("filme").value = "";
+  document.getElementById("nomedofilme").value = "";
+}
+
+function listarFilmesNaTela() {
+  console.log(listaFilmes)
+  var elementoListaFilmes = document.getElementById("listaFilmes");
+  elementoListaFilmes.innerHTML = "";
+
+  for (var i = 0; i < listaFilmes.length; i++) {
+    var elementoFilmeFavorito = "<img src=" + listaFilmes[i] + ">";
+
+    elementoListaFilmes.innerHTML =  elementoListaFilmes.innerHTML + elementoFilmeFavorito;
+
+    var elementoListaNome = document.getElementById("nomeFilme");
+    var elementoFraseFilme = document.getElementById("fraseFilme");
+    elementoFraseFilme.innerHTML = "Nome dos filmes";
+
+    if (listaFilmes[i + 1] !== undefined) {
+      elementoListaNome.innerHTML =
+        elementoListaNome.innerHTML + " - " + listaFilmes[i + 1];
+    }
+  }
+}
+
+function removerFilme() {
+  var nomeFilmeFavorito = document.getElementById("nomedofilme").value;
+  var filmeFavorito = document.getElementById("filme").value;
+
+  console.log(listaFilmes)
+  if (listaFilmes.length == 0) {
+    elementoFilmeInvalido.innerHTML = "Lista vazia"
+  } else {
+    listaFilmes.forEach((filme) => {
+      var posFilmeFavorito = filme.indexOf(filmeFavorito)
+      var posNomeFilme = filme.indexOf(nomeFilmeFavorito)
+      
+      listaFilmes.splice(posFilmeFavorito, 1)
+      listaFilmes.splice(posNomeFilme, 1);
+    })
+    
+    }
+    
+
+  }
 
 
-document.write("<p>" + "<strong>" +  "Lista de  Filmes!" + "</strong>" + "</p>");
 
 
