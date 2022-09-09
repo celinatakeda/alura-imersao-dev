@@ -18,6 +18,7 @@ body {
   margin: 0 0 5px;
   background: #121214;
   color: #da1e26;
+  border-radius: 5px;
 }
 
 .page-subtitle {
@@ -39,6 +40,10 @@ body {
 #listaFilmes img {
   margin: 10px;
   max-height: 250px;
+  display: flex;
+  justify-content: center;
+  
+  
 }
 
 .form-wrapper {
@@ -68,24 +73,18 @@ body {
   opacity: 0.8;
 }
 
-#listaFilmes {
-  width: 300px;
-  height: 200px;
-  display: flex;
-  margin-left: 10px;
-}
-
-#nomeFilme {
-  color: #da1e26;
-  margin-top: 1px;
-}
-
 h2 {
-  color: #da1e26;
+  color: #da1e26 ;
+  font-size: 18px;
+  background: #121214;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+
 }
 
-#fraseFilme {
-  background: #000000;
+p {
+  font-weight: bold;
 }
 
 
