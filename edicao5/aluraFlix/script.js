@@ -26,11 +26,12 @@ function listarFilmesNaTela() {
   var elementoListaFilmes = document.getElementById("listaFilmes");
   var elementoListaNomes = document.getElementById("nomeFilme");
   elementoListaFilmes.innerHTML = "";
+  elementoListaNomes.innerHTML = "";
 
-  for (var indice = 0; indice < listaCapas.length; indice++) {
-    var novoElementoListaFilmes =  "<img src=" +  listaCapas[indice] +">";
+  for (var i = 0; i < listaCapas.length; i++) {
+    var novoElementoListaFilmes =  "<img src=" +  listaCapas[i] +">";
     
-    var listaNome = `${listaNomes[indice]}` + " "; 
+    var listaNome = `${listaNomes[i]}` + " "; 
 
     elementoListaFilmes.innerHTML += novoElementoListaFilmes;
     elementoListaNomes.innerHTML += listaNome;
