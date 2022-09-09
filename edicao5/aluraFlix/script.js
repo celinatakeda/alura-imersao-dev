@@ -31,7 +31,7 @@ function listarFilmesNaTela() {
   for (var i = 0; i < listaCapas.length; i++) {
     var novoElementoListaFilmes =  "<img src=" +  listaCapas[i] +">";
     
-    var listaNome = `${listaNomes[i]}` + " "; 
+    var listaNome = `${listaNomes[i]}` + " - "; 
 
     elementoListaFilmes.innerHTML += novoElementoListaFilmes;
     elementoListaNomes.innerHTML += listaNome;
@@ -42,18 +42,24 @@ function removerFilme() {
   var nomeFilmeFavorito = document.getElementById("nomedofilme").value;
   var filmeFavorito = document.getElementById("filme").value;
 
-  console.log(listaFilmes)
+ 
   if (listaNomes.length == 0) {
     alert("Lista vazia!")
   } else {
-    listaNome.forEach((nome) => {      
-      var posNomeFilme = nome.indexOf(nomeFilmeFavorito)   
+      listaNomes.forEach(() => {      
+        var posNomeFilme = listaNomes.indexOf(nomeFilmeFavorito)       
+        listaNomes.splice(posNomeFilme, 1);
+        listarFilmesNaTela()
+        console.log(listaNomes);        
+      })
       
-      listaFilmes.splice(posNomeFilme, 1);
-    })
-    
+      listaCapas.forEach(() => {
+        var posFilmesFavoritos = listaCapas.indexOf(filmeFavorito)
+        listaCapas.splice(posFilmesFavoritos, 1);
+        listarFilmesNaTela()
+        console.log(listaCapas)    
+      })    
     }
-    
   }
 
 
