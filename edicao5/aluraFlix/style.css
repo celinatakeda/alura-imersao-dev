@@ -39,10 +39,7 @@ body {
 
 #listaFilmes img {
   margin: 10px;
-  max-height: 250px;
-  
-  
-  
+  max-height: 250px;  
 }
 
 .form-wrapper {
@@ -79,7 +76,6 @@ h2 {
   border-radius: 5px;
   display: flex;
   justify-content: center;
-
 }
 
 p {
