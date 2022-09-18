@@ -127,7 +127,6 @@ function sortearCarta() {
   exibeCardJogador();
 }
 
-
 function exibeCardJogador() {
   var card = document.getElementById("opcoes");
   var cardTexto = ""
@@ -306,8 +305,7 @@ function reiniciar() {
   elementoResultado.innerHTML = ""
   card.innerHTML = ""
   pontuacao.innerHTML = ""
-  divBotao.innerHTML = ""
-  
+  divBotao.innerHTML = ""  
   
   cartasDaMaquina = [];
   cartasDoJogador = [];
