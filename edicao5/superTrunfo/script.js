@@ -53,10 +53,7 @@ function exibirOpcoes() {
 
   for (var atributo in cartaJogador.atributos) {
     opcoesTexto +=
-      "<input type='radio' name='atributo' value='" +
-      atributo +
-      "'>" +
-      atributo;
+      "<input type='radio' name='atributo' value='" + atributo + "'>" +  atributo;
     console.log(atributo);
   }
   opcoes.innerHTML = opcoesTexto;
