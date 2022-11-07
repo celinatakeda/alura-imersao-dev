@@ -1,7 +1,13 @@
-function HomePage() {
+import config from '../config.json';
+
+function HomePage() {  
   const estiloDaHomePage = {backgroundColor: 'red'};
   return (
-    <div style={ estiloDaHomePage }>Bem vindo ao AluraTube!</div>
+    <div style={ estiloDaHomePage }>
+      <Menu />
+      <Header />
+      <Timeline />
+    </div>
   );
 }
 
@@ -15,18 +21,21 @@ function Menu() {
   )
 }
 
-function Menu() {
+function Header() {
   return (
     <div>
-      Menu
+      <img src='banner' />
+      <img src={`https://github.com/${config.github}.png`} />
+      {config.name}
+      {config.job}
     </div>
   )
 }
 
-function Menu() {
+function Timeline() {
   return (
     <div>
-      Menu
+      Timeline
     </div>
   )
 }
