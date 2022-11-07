@@ -1,20 +1,28 @@
-import config from '../config.json';
-import styled from 'styled-components';
-import { StyledTimeline } from "../src/components/Timeline";
+import config from '../config.json'
+import styled from 'styled-components'
+import { CSSReset } from '../src/components/CSSReset'
+import Menu from '../src/components/Menu'
+import { StyledTimeline } from '../src/components/Timeline';
 
-function HomePage() {  
-  const estiloDaHomePage = {backgroundColor: 'red'};
+function HomePage() {
+  const estiloDaHomePage = {
+    //backgroundColor: 'red'
+  }
+
   return (
-    <div style={ estiloDaHomePage }>
-      <Menu />
-      <Header />
-      <Timeline playlists={config.playlists} />
-    </div>
-  );
+    <>
+      <CSSReset />
+      <div style={estiloDaHomePage}>
+        <Menu />
+        <Header />
+        <Timeline playlists={config.playlists} />
+      </div>
+    </>
+  )
 }
 
 export default HomePage
-
+/*
 function Menu() {
   return (
     <div>
@@ -22,36 +30,34 @@ function Menu() {
     </div>
   )
 }
+*/
 
-const StyledHeader = styled.div `
+const StyledHeader = styled.div`
   img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
   }
   .user-info {
+    margin-top: 50px;
     display: flex;
     align-items: center;
     width: 100%;
     padding: 16px 32px;
     gap: 16px;
   }
-`;
+`
 
 function Header() {
   return (
     <StyledHeader>
-      <img src='banner' />
+      <img src="banner" />
 
       <section className="user-info">
         <img src={`https://github.com/${config.github}.png`} />
         <div>
-          <h2>
-            {config.name}
-          </h2>
-          <p>
-            {config.job}
-          </p>
+          <h2>{config.name}</h2>
+          <p>{config.job}</p>
         </div>
       </section>
     </StyledHeader>
@@ -60,33 +66,31 @@ function Header() {
 
 function Timeline(propriedades) {
   // console.log("Dentro do componente", propriedades.playlists);
-  const playlistNames = Object.keys(propriedades.playlists);
+  const playlistNames = Object.keys(propriedades.playlists)
   // Statement
   // Retorno por expressão
   return (
-      <StyledTimeline>
-          {playlistNames.map((playlistName) => {
-              const videos = propriedades.playlists[playlistName];
-              console.log(playlistName);
-              console.log(videos);
-              return (
-                  <section>
-                      <h2>{playlistName}</h2>
-                      <div>
-                          {videos.map((video) => {
-                              return (
-                                  <a href={video.url}>
-                                      <img src={video.thumb} />
-                                      <span>
-                                          {video.title}
-                                      </span>
-                                  </a>
-                              )
-                          })}
-                      </div>
-                  </section>
-              )
-          })}
-      </StyledTimeline>
+    <StyledTimeline>
+      {playlistNames.map(playlistName => {
+        const videos = propriedades.playlists[playlistName]
+        console.log(playlistName)
+        console.log(videos)
+        return (
+          <section>
+            <h2>{playlistName}</h2>
+            <div>
+              {videos.map(video => {
+                return (
+                  <a href={video.url}>
+                    <img src={video.thumb} />
+                    <span>{video.title}</span>
+                  </a>
+                )
+              })}
+            </div>
+          </section>
+        )
+      })}
+    </StyledTimeline>
   )
 }
