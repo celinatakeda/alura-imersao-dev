@@ -45,30 +45,32 @@ function Menu() {
 */
 
 const StyledHeader = styled.div`
-  .user-imagem {
+  img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
   }
 
-  .banner {
-    width: 100%;
-    height: 230px;
-  }
-  .user-info {
-    margin-top: 50px;
+  .user-info { 
     display: flex;
     align-items: center;
     width: 100%;
     padding: 16px 32px;
     gap: 16px;
   }
-`
+`;
+
+const StyledBanner = styled.div`
+    background-color: blue;
+    background-image: url(${({ bg }) => bg});
+    /* background-image: url(${config.bg}); */
+    height: 230px;
+`;
 
 function Header() {
   return (
     <StyledHeader>      
-      <img className="banner" src="https://images.unsplash.com/photo-1626908013351-800ddd734b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80" />
+      <StyledBanner bg={config.bg} />
 
       <section className="user-info">
         <img className="user-imagem" src={`https://github.com/${config.github}.png`} />
@@ -90,10 +92,10 @@ function Timeline({ searchValue, ...propriedades }) {
     <StyledTimeline>
       {playlistNames.map(playlistName => {
         const videos = propriedades.playlists[playlistName]
-        console.log(playlistName)
-        console.log(videos)
+        //console.log(playlistName)
+        //console.log(videos)
         return (
-          <section>
+          <section key={playlistName}>
             <h2>{playlistName}</h2>
             <div>
               {videos
@@ -104,9 +106,11 @@ function Timeline({ searchValue, ...propriedades }) {
               })
                 .map(video => {
                   return (
-                    <a href={video.url}>
+                    <a key={video.url} href={video.url}>
                       <img src={video.thumb} />
-                      <span>{video.title}</span>
+                      <span>
+                        {video.title}
+                      </span>
                     </a>
                   )
                 })}
