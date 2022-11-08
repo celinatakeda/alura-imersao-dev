@@ -1,8 +1,9 @@
 import React from 'react';
 import config from '../config.json'
 import styled from 'styled-components'
-import { CSSReset } from '../src/components/CSSReset'
 import Menu from '../src/components/Menu'
+import Favoritos from "../src/components/Favoritos";
+import { CSSReset } from '../src/components/CSSReset'
 import { StyledTimeline } from '../src/components/Timeline';
 
 function HomePage() {
@@ -26,7 +27,7 @@ function HomePage() {
         <Timeline searchValue={valorDoFiltro} playlists={config.playlists}>
           Conteúdo
         </Timeline>
-        <Favoritos favorites={config.favorites} />
+        <Favoritos  />
         
       </div>
     </>
@@ -120,21 +121,4 @@ function Timeline({ searchValue, ...propriedades }) {
       })}
     </StyledTimeline>
   )
-}
-
-function Favoritos(props) {
-  const favoritos = Object.keys(props.favorites)
-  {favoritos.map((favorito) => {
-    const user = props.favorites[favorito]    
-    console.log(user);
-    
-    return (
-      <section>
-        <p>AluraTubes Favoritos</p>
-        <img src={user.url}/>
-        <span>{user.username}</span>
-    </section>
-  )
-})}
-
 }
