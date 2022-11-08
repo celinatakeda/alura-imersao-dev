@@ -1,3 +1,4 @@
+import React from 'react';
 import config from '../config.json'
 import styled from 'styled-components'
 import { CSSReset } from '../src/components/CSSReset'
@@ -7,15 +8,24 @@ import { StyledTimeline } from '../src/components/Timeline';
 function HomePage() {
   const estiloDaHomePage = {
     //backgroundColor: 'red'
-  }
+  };
 
+  const [valorDoFiltro, setValorDoFiltro] = React.useState("Angular");
+  
   return (
     <>
       <CSSReset />
-      <div style={estiloDaHomePage}>
-        <Menu />
+      <div style={{
+         display: "flex",
+         flexDirection: "column",
+         flex: 1,
+      }}>
+         {/* Prop Drilling */}
+        <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro}/>
         <Header />
-        <Timeline playlists={config.playlists} />
+        <Timeline searchValue={valorDoFiltro} playlists={config.playlists}>
+          Conteúdo
+        </Timeline>
         <Favoritos favorites={config.favorites} />
         
       </div>
@@ -71,7 +81,7 @@ function Header() {
   )
 }
 
-function Timeline(propriedades) {
+function Timeline({ searchValue, ...propriedades }) {
   // console.log("Dentro do componente", propriedades.playlists);
   const playlistNames = Object.keys(propriedades.playlists)
   // Statement
@@ -86,14 +96,20 @@ function Timeline(propriedades) {
           <section>
             <h2>{playlistName}</h2>
             <div>
-              {videos.map(video => {
-                return (
-                  <a href={video.url}>
-                    <img src={video.thumb} />
-                    <span>{video.title}</span>
-                  </a>
-                )
-              })}
+              {videos
+                .filter((video) => {
+                  const titleNormalized = video.title.toLowerCase();
+                  const searchValueNormalized = searchValue.toLowerCase();
+                  return titleNormalized.includes(searchValueNormalized)
+              })
+                .map(video => {
+                  return (
+                    <a href={video.url}>
+                      <img src={video.thumb} />
+                      <span>{video.title}</span>
+                    </a>
+                  )
+                })}
             </div>
           </section>
         )
