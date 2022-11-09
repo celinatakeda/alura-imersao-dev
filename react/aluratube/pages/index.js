@@ -3,19 +3,13 @@ import config from '../config.json'
 import styled from 'styled-components'
 import Menu from '../src/components/Menu'
 import Favoritos from "../src/components/Favoritos";
-import { CSSReset } from '../src/components/CSSReset'
 import { StyledTimeline } from '../src/components/Timeline';
 
 function HomePage() {
-  const estiloDaHomePage = {
-    //backgroundColor: 'red'
-  };
-
   const [valorDoFiltro, setValorDoFiltro] = React.useState("Angular");
   
   return (
-    <>
-      <CSSReset />
+    <>     
       <div style={{
          display: "flex",
          flexDirection: "column",
@@ -46,6 +40,8 @@ function Menu() {
 */
 
 const StyledHeader = styled.div`
+  background-color: ${({ theme }) => theme.backgroundLevel1};
+  
   img {
     width: 80px;
     height: 80px;
