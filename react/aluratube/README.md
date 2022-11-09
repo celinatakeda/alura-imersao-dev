@@ -8,3 +8,15 @@ React.js
 Next.js
 
 Styled Components
+
+## Links
+https://stackoverflow.design
+
+https://gestalt.pinterest.systems/home
+
+https://spectrum.adobe.com/
+
+https://nextjs.org/docs/advanced-features/custom-app
+
+https://pt-br.reactjs.org/docs/context.html
+
