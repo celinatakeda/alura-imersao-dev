@@ -20,3 +20,7 @@ https://nextjs.org/docs/advanced-features/custom-app
 
 https://pt-br.reactjs.org/docs/context.html
 
+https://web.dev/rendering-performance/
+
+https://techguide.sh/pt-BR/path/react/service-workers/
+
