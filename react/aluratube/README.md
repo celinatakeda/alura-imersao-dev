@@ -9,6 +9,11 @@ Next.js
 
 Styled Components
 
+Supabase
+
+## Instalando o supabase
+npm install @supabase/supabase-js
+
 ## Links
 https://stackoverflow.design
 
@@ -23,4 +28,6 @@ https://pt-br.reactjs.org/docs/context.html
 https://web.dev/rendering-performance/
 
 https://techguide.sh/pt-BR/path/react/service-workers/
+
+https://supabase.com/
 
