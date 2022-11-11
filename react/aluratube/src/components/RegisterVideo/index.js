@@ -47,7 +47,7 @@ export default function RegisterVideo() {
         //initialValues: { titulo: "Frost punk", url: "https://youtube.." }
         initialValues: { titulo: "Frost punk", url: "https://www.youtube.com/watch?v=QsqatJxAUtk" }
     });
-    const [formVisivel, setFormVisivel] = React.useState(true);
+    const [formVisivel, setFormVisivel] = React.useState(false);
     /*
     ## O que precisamos para o form funcionar?
     - pegar os dados, que precisam vir do state
