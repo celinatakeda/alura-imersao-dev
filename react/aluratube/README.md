@@ -11,6 +11,10 @@ Styled Components
 
 Supabase
 
+<p align="center">
+  <img alt="aluraTube" src=".github/aluraTube.png" width="100%">
+</p>
+
 ## Instalando o supabase
 npm install @supabase/supabase-js
 
