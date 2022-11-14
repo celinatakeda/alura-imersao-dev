@@ -3,5 +3,5 @@ Crindo um array de filmes com os nomes e as imagens.
 
 
 <p align="center">
-  <img alt="aluraTube" src=".github/aluraTube.png" width="100%">
+  <img alt="aluraFlix" src=".github/aluraFlix.png" width="100%">
 </p>
