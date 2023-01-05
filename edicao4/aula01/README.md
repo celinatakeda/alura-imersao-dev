@@ -1,5 +1,5 @@
 # Calculadora de Média
 
-<p>
-  <img src=".github/calculadorMedia.png">
+<p align="center">
+  <img src=".github/calculadorMedia.png" width=500>
 </p>
