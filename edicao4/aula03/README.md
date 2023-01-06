@@ -1,5 +1,5 @@
 # Mentalista
 
 <p align="center">
-  <img src=".github/mentalista.png" width=600>
+  <img src=".github/mentalista.png">
 </p>
