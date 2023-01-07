@@ -13,5 +13,8 @@ No app.js implementei as funções:
 
 **exibeJogadoresNaTela()** - joga na tela os jogadores que são adicionados na lista;
 
-
+## Visual do projeto
+<p>
+  <img src=".github/tabelaClassificacao.png">
+</p>
 
