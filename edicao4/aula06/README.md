@@ -15,6 +15,6 @@ No app.js implementei as funções:
 
 ## Visual do projeto
 <p>
-  <img src=".github/tabelaClassificacao.png">
+  <img src=".github/tabelaClassificacao.png" width=600>
 </p>
 
