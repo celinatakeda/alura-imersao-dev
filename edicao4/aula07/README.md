@@ -1,5 +1,5 @@
 # Super Trunfo
 
 <p align="center">
-  <img src=".github/superTrunfo.png" width=650>
+  <img src=".github/superTrunfo.png" >
 </p>
