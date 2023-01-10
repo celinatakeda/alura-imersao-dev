@@ -11,3 +11,8 @@ Estilizamos o portfólio com CSS.
 Criamos tema claro e escuro no portfólio
 
 Usamos uma função para alterar entre os temas no Javascript.
+
+## Visual do projeto
+<p align="center">
+  <img src=".github/certificard.png" width=800>
+</p>
