@@ -14,5 +14,5 @@ Usamos uma função para alterar entre os temas no Javascript.
 
 ## Visual do projeto
 <p align="center">
-  <img src=".github/certificard.png" width=800>
+  <img src=".github/certificard.png" width=500>
 </p>
