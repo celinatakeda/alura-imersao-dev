@@ -3,5 +3,5 @@ Criando um jogo de adivinhação, onde o programa escolhe um número aleatório 
 
 
 <p align="center">
-  <img alt="portfólio" src=".github/certificard.png" width="100%">
+  <img alt="portfólio" src=".github/certificard.png">
 </p>
