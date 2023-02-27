@@ -44,14 +44,9 @@ Criar o seu próprio portfólio. Você vai conhecer o Figma, uma plataforma de d
 
 Projeto: **Portfólio**
 
-## Aula 10 
-Evoluir o portfólio e colocá-lo no ar para que todo mundo consiga acessá-lo.
+# Calculadora de Média
 
-Projeto: **Certificard**
+<p align="center">
+  <img src=".github/calculadorMedia.png" width=500>
+</p>
 
-## Tecnologias Utilizadas
-**HTML**
-
-**CSS**
-
-**Javascript** 
